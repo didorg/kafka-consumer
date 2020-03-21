@@ -1,0 +1,7 @@
+server:
+  port: 8280
+
+spring:
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
