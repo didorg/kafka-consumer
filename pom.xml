@@ -29,6 +29,14 @@
             <artifactId>spring-kafka</artifactId>
         </dependency>
 
+        <!-- Java library that can be used to convert:
+        - Java Objects into their JSON representation
+        - JSON string to an equivalent Java object -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>

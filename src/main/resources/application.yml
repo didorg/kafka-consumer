@@ -1,7 +1,15 @@
 server:
   port: 8280
 
+#Kafka config props:
 spring:
   kafka:
-    producer:
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    bootstrap-servers: 127.0.0.1:9092
+    #Consumer Deserialization:
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: myGroupId
+      enable-auto-commit: false
+    listener:
+      missing-topics-fatal: false
